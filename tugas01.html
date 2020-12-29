@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawaban task01</title>
+</head>
+<body>
+    <h2> Soal Membuat CV di Github </h2>
+    <a href="CV Erwan Sistandi.pdf"> CV Erwan Sistandi </a>
+    <h2>Soal Jelaskan ulang tentang git dan github</h2>
+    <p>Git adalah version control system yang digunakan para developer untuk mengembangkan software secara bersama-bersama. Fungsi utama git yaitu mengatur versi dari source code program anda dengan mengasih tanda baris dan code mana yang ditambah atau diganti.
+        <br>GitHub adalah sebuah aplikasi berbasis website dengan Version Control System (VCS) yang menyediakan layanan untuk menyimpan repository dengan gratis
+</p>
+    <h2>Soal Conflict di repository </h2>
+      <ul>
+         <li>Apa saja yang menyebabkan terjadinya conflict</li>
+         <p>salah satu terjadinya confict adalah susunan konflik terjadi ketika seorang pengembang telah memindahkan/mengubah nama/menghapus sebuah file atau folder, dimana pengembang lain juga telah memindahkan/mengubah nama/menghapus atau baru mengubahnya.</p>
+         <li>Bagaimana menghindari conflict</li>
+         <p>Menghindari conflict  menggunakan percabangan</p>
+         <p>contoh membuat percabangan
+            Misalnya, si A akan mengerjakan fitur X, maka dia harus membuat cabang sendiri. Si A akan bebas melakukan apapun di cabangnya tanpa menggangu cabang utama (master).
+            <br> Cara Membuat Cabang Baru
+            Perintah untuk membuat cabang adalah <i>git branch</i>, kemudian diikuti dengan nama cabangnya.
+            <br> Contoh: git branch fitur_register Maka Git akan membuat cabang bernama fitur_register.
+             Sekarang setiap orang memiliki cabangnya masing-masing. Mereka bebas bereksperimen.
+            Untuk melihat cabang apa saja yang ada di repositori, gunakan perintah git branch.</p>
+            <img src="/images/percabganan-di-repositori-git.png"><img>
+         <li>Apa yang harus dilakukan apabila terjadi conflict</li>
+         <p>Penggambungan otomatis user A dan User B </p>
+         <p align="justify">Pertama-tama, git akan mencoba untuk menggabungkan secara otomatis perubahan yang dilakukan oleh user A dan user B. Penggabungan otomatis ini disebut dengan auto merging. Auto merging akan berhasil jika revisi yang anda berdua lakukan tidak berada di baris code yang sama. Tapi akan gagal jika ternyata berada di baris code yang sama. Perhatikan baris yang berawalan dengan “CONFLICT”, perhatikan nama file yang ternyata bertabrakan revisinya.
+         Untuk membetulkannya, anda bisa membuka file navigasi.php dengan text editor ataupun IDE kesukaan anda. Di file tersebut git sudah memberikan tanda di bagian mana yang bermasalah. Git juga akan menandakan apa yang anda lakukan dan apa yang user B lakukan di file tersebut. Git akan menuliskan “HEAD” sebagai revisi yang anda buat, dan “MASTER” sebagai revisi yang ada di repo remote (atau tergantung branch yang anda pull). Lakukan revisi final dan setelahnya anda stage dan commit file yang bermasalah tersebut.
+         </p>
+        </ul>
+
+    
+</body>
+</html>
